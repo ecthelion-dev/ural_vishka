@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- fancy box -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="top_bar_header">
+                <div class="container">
+                    <div class="about_block">
+                        <div class="networks_group">
+                            <a href="#"><img src="img/networks.png" alt=""></a>
+                            <a href="#"><img src="img/networks1.png" alt=""></a>
+                            <a href="#"><img src="img/networks2.png" alt=""></a>
+                            <a href="#"><img src="img/networks3.png" alt=""></a>
+                        </div>
+                        <div class="right_group_bar">
+                            <button class="location js-open-map-modal" type="button">
+                                <img src="img/location.png" alt="">
+                                <p>Челябинск, 40 лет Победы, д. 52 </p>
+                            </button>
+                            <div class="work_time">
+                                <img src="img/time.png" alt="">
+                                <p>Круглосуточно, без выходных и праздников</p>
+                            </div>
+                            <div class="search_ring">
+                                <a href="#"><img src="img/search.png" alt=""></a>
+                                <a href="#"><img src="img/ring.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_header">
+                <div class="container">
+                    <div class="about_block">
+                        <div class="header__left">
+                            <a href="#" class="logo">
+                                <img src="img/logo.png" alt="" class="logo_img">
+                                <img src="img/logo1.png" alt="" class="logo_text">
+                            </a>
+                            <p class="header__subtitle">Аренда автовышек 24/7 в Челябинске и области</p>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__phone">
+                                <img src="img/phone_icon.png" alt="">
+                                <a href="tel:+79227287955">+7 922 728 79 55</a>
+                            </div>
+                            <div class="header__socials">
+                                <p class="header__text">Пишите <br> нам</p>
+                                <a href="#"><img src="img/networks_header.png" alt="Viber"></a>
+                                <a href="#"><img src="img/networks_header1.png" alt="VK"></a>
+                                <a href="#"><img src="img/networks_header2.png" alt="Telegram"></a>
+                                <a href="#"><img src="img/networks_header3.png" alt="Email"></a>
+                            </div>
+                            <button class="header__button js-open-consultation">
+                                <img src="img/arrow_up.png" alt="">
+                                Бесплатная консультация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- header-fixed (scroll qilinganda paydo bo'ladi) -->
+        <header class="header header--fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="header__left">
+                        <button class="header__hamburger" style="display: none;">
+                            <img src="img/hamburger.png" alt="">
+                        </button>
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="" class="logo_img">
+                            <img src="img/logo1.png" alt="" class="logo_text">
+                            <p class="header__subtitle" style="display: none;">Аренда автовышек 24/7 в Челябинске и
+                                области</p>
+                        </a>
+                        <div class="networks_group">
+                            <a href="#"><img src="img/networks.png" alt=""></a>
+                            <a href="#"><img src="img/networks1.png" alt=""></a>
+                            <a href="#"><img src="img/networks2.png" alt=""></a>
+                            <a href="#"><img src="img/networks3.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__phone">
+                            <img src="img/phone_icon.png" alt="">
+                            <a href="tel:+79227287955">+7 922 728 79 55</a>
+                        </div>
+                        <div class="header__socials">
+                            <a href="#"><img src="img/networks_header.png" alt="Viber"></a>
+                            <a href="#"><img src="img/networks_header1.png" alt="VK"></a>
+                            <a href="#"><img src="img/networks_header2.png" alt="Telegram"></a>
+                            <a href="#"><img src="img/networks_header3.png" alt="Email"></a>
+                        </div>
+                        <button class="location js-open-map-modal" type="button">
+                            <img src="img/location.png" alt="">
+                            <p>Челябинск, 40 лет Победы, д. 52 </p>
+                        </button>
+                        <button class="header__button js-open-consultation">
+                            <img src="img/arrow_up.png" alt="">
+                            Бесплатная консультация
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- header-menu -->
+        <div class="header__menu" style="display: none;">
+            <div class="container">
+                <div class="header__menu-content">
+                    <button class="menu__close">
+                        <img src="img/close_menu.png" alt="">
+                    </button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#services">Услуги и стоимость</a></li>
+                        <li class="main-nav__item"><a href="#works">Примеры работ</a></li>
+                        <li class="main-nav__item"><a href="#reviews">Отзывы</a></li>
+                        <li class="main-nav__item main-nav__item--discount"><a href="#offers">Акции <span>%</span></a>
+                        </li>
+                        <li class="main-nav__item"><a href="#about">Как я работаю</a></li>
+                        <li class="main-nav__item"><a href="#about">Обо мне</a></li>
+                        <li class="main-nav__item"><a href="#faq">Вопрос-ответ</a></li>
+                        <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <button class="header__button js-open-consultation">
+                        <img src="img/arrow_up.png" alt="">
+                        Бесплатная консультация
+                    </button>
+                    <div class="top-bar__socials">
+                        <a href="#"><img src="img/networks.png" alt=""></a>
+                        <a href="#"><img src="img/networks1.png" alt=""></a>
+                        <a href="#"><img src="img/networks2.png" alt=""></a>
+                        <a href="#"><img src="img/networks3.png" alt=""></a>
+                    </div>
+                    <button class="top-bar__address js-open-map-modal" type="button">
+                        <img src="img/location.png" alt="">
+                        <span>
+                            Челябинк, ул. Куйбышева, д. 75
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h2 class="hero__title">Аренда автовышек в Челябинске
+                            и области от 1500 ₽ \ час </h2>
+                        <p class="hero__description">Телескопические автогидроподъёмники (АГП)
+                            до 30 метров для высотных работ с опытными операторами. Минимальный заказ – 4 часа</p>
+                        <ul class="hero__list">
+                            <li><span>Честное рыночное ценообразование</span> — без лишних переплат</li>
+                            <li><span>Прозрачно и без сюрпризов</span> — изначально фиксированная цена</li>
+                            <li><span>Подаём максимально быстро</span> — от 20 минут после обращения (по городу)</li>
+                            <li><span>Регистрация в Ростехнадзоре</span> — сертифицированные машины и экипаж</li>
+                            <li><span>Работаем официально</span> — юридически чисто. Полный пакет документов</li>
+                            <li><span>Система скидок</span> — за долгосрочную аренду и для постоянных клиентов</li>
+                        </ul>
+                        <div class="hero__action">
+                            <div class="buttons_hero">
+                                <button class="hero__button js-open-rashet">
+                                    <img src="img/arrow_up1.png" alt="">
+                                    Рассчитать стоимость аренды
+                                </button>
+                                <a href="tel:+79222377720">+7 922 23 77 720 </a>
+                            </div>
+                            <div class="texts_mini_hero">
+                                <p>Бесплатный расчёт уже сегодня, без обязательств </p>
+                                <p>Нажмите, для прямого звонка</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <img src="img/hero_photo.png" alt="" class="hero_photo">
+                        <img src="img/bg_photo.png" alt="" class="bg_photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cookie -->
+        <section class="cookie">
+            <div class="container">
+                <div class="about_block">
+                    <p>Продолжая пользоваться сайтом, вы соглашаетесь на обработку файлов cookie. Они помогают делать
+                        сайт удобнее и собирать статистику. Подробнее - <a href="#" class="js-open-privacy">Политика
+                            конфиденциальности</a></p>
+                    <a href="#" class="cookie__button">
+                        <img src="img/arrow_up1.png" alt="">
+                        Принять условия
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- main nav -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#catalog">Техника и цены</a></li>
+                    <li class="main-nav__item"><a href="#services">Услуги</a></li>
+                    <li class="main-nav__item main-nav__item--discount"><a href="#actions">Акции <span>%</span></a></li>
+                    <li class="main-nav__item"><a href="#reviews">Отзывы и клиенты</a></li>
+                    <li class="main-nav__item"><a href="#steps">Как мы работаем</a></li>
+                    <li class="main-nav__item"><a href="#works">Техника в работе</a></li>
+                    <li class="main-nav__item"><a href="#about">О компании</a></li>
+                    <li class="main-nav__item"><a href="#advantages">Почему мы?</a></li>
+                    <li class="main-nav__item"><a href="#faq">Вопрос-ответ</a></li>
+                    <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- catalog -->
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <div class="about_block">
+                    <div class="section_title">
+                        Каталог автовышек и цена аренды
+                    </div>
+                    <div class="description_catalog">
+                        Телескопические автогидроподъёмники (АГП) японского производства в аренду по низкой стоимости.
+                        Все автоподъёмники зарегистрированы в Ростехнадзоре, полностью обслужены и проходят регулярное
+                        ТО. Опытные, профессиональные операторы готовы к заказам любой сложности. Стоимость услуг
+                        указана без учёта скидок и акций.
+                    </div>
+                    <div class="catalog_cards_group">
+                        <div class="card_catalog">
+                            <img src="img/catalog_img.png" alt="" class="catalog_img" loading="lazy">
+                            <div class="texts_card">
+                                <div class="texts_main_card active">
+                                    <h3>Isuzu Elf — до 18 метров</h3>
+                                    <div class="desc_cards">
+                                        <p>Цена - от <span>1800 ₽ / час</span></p>
+                                        <p>Минимальный заказ - <span>4 часа</span></p>
+                                        <p>Подача - <span>бесплатно</span> (от 20 минут)</p>
+                                    </div>
+                                    <h4>Высота подъёма - <span>2-18 метров (6 этаж)</span></h4>
+                                </div>
+                                <div class="charecters_texts">
+                                    <p>Высота подъёма: от 2 до 18 метров (5 этаж) <br>
+                                        Стрела: полноповоротная AICHI SJ16A <br>
+                                        Грузоподъёмность корзины: 200 кг (2 человека) <br>
+                                        Датчики: веса и вылета <br>
+                                        Мощность: 140 л.с. <br>
+                                        Габариты: ширина шасси — 2,05 м, высота — 3,3 м <br>
+                                        Вес: 6 тонн
+                                    </p>
+                                </div>
+                                <div class="pricing_texts">
+                                    <p>Точную стоимость работ уточнит менеджер после обсуждения ваших задач</p>
+                                    <p>Цена действительна для наличного расчёта <br>
+                                        Безналичный расчёт: +100 ₽/час <br>
+                                        Цена указана для работы в Челябинске <br>
+                                        Пригород и область: +50 ₽/км от поста ГАИ</p>
+                                </div>
+                                <div class="charecters">
+                                    <a href="#" class="tab-link" data-tab="char">Характеристики</a>
+                                    <a href="#" class="tab-link" data-tab="price">Условия ценообразования</a>
+                                </div>
+                            </div>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать
+                                Isuzu Elf —
+                                до 18 м</a>
+                        </div>
+                        <div class="card_catalog">
+                            <img src="img/catalog_img1.png" alt="" class="catalog_img" loading="lazy">
+                            <div class="texts_card">
+                                <div class="texts_main_card active">
+                                    <h3>Isuzu Elf — до 23 метров</h3>
+                                    <div class="desc_cards">
+                                        <p>Цена - от <span>2300 ₽ / час</span></p>
+                                        <p>Минимальный заказ - <span>4 часа</span></p>
+                                        <p>Подача - <span>бесплатно</span> (от 30 минут)</p>
+                                    </div>
+                                    <h4>Высота подъёма - <span>2-23 метров (8 этаж)</span></h4>
+                                </div>
+                                <div class="charecters_texts">
+                                    <p>Высота подъёма: от 2 до 23 метров (7-8 этаж) <br>
+                                        Стрела: полноповоротная AICHI SK 210 <br>
+                                        Грузоподъёмность корзины: 200 кг (2 человека) <br>
+                                        Датчики: веса и вылета <br>
+                                        Мощность: 140 л.с. <br>
+                                        Габариты: ширина шасси — 2,05 м, высота — 3,3 м <br>
+                                        Вес: 6,5 тонн
+                                    </p>
+                                </div>
+                                <div class="pricing_texts">
+                                    <p>Точную стоимость работ уточнит менеджер после обсуждения ваших задач</p>
+                                    <p>Цена действительна для наличного расчёта <br>
+                                        Безналичный расчёт: +150 ₽/час <br>
+                                        Цена указана для работы в Челябинске <br>
+                                        Пригород и область: +60 ₽/км от поста ГАИ</p>
+                                </div>
+                                <div class="charecters">
+                                    <a href="#" class="tab-link" data-tab="char">Характеристики</a>
+                                    <a href="#" class="tab-link" data-tab="price">Условия ценообразования</a>
+                                </div>
+                            </div>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать Isuzu Elf —
+                                до 23 м</a>
+                        </div>
+                        <div class="card_catalog">
+                            <img src="img/catalog_img2.png" alt="" class="catalog_img" loading="lazy">
+                            <div class="texts_card">
+                                <div class="texts_main_card">
+                                    <h3>Mitsubishi Fuso Fighter — до 30 м</h3>
+                                    <div class="desc_cards">
+                                        <p>Цена - от <span>3000 ₽ / час</span></p>
+                                        <p>Минимальный заказ - <span>4 часа</span></p>
+                                        <p>Подача - <span>бесплатно</span> (от 40 минут)</p>
+                                    </div>
+                                    <h4>Высота подъёма - <span>2-30 метров (11 этаж)</span></h4>
+                                </div>
+                                <div class="charecters_texts">
+                                    <p>Высота подъёма: от 2 до 28 метров (9-10 этаж) <br>
+                                        Стрела: полноповоротная AICHI SK 260 <br>
+                                        Грузоподъёмность корзины: 200 кг (2 человека) <br>
+                                        Датчики: веса и вылета <br>
+                                        Мощность: 250 л.с. <br>
+                                        Габариты: ширина шасси — 2,05 м, высота — 3,6 м <br>
+                                        Вес: 7,3 тонн
+                                    </p>
+                                </div>
+                                <div class="pricing_texts">
+                                    <p>Точную стоимость работ уточнит менеджер после обсуждения ваших задач</p>
+                                    <p>Цена действительна для наличного расчёта <br>
+                                        Безналичный расчёт: +200 ₽/час <br>
+                                        Цена указана для работы в Челябинске <br>
+                                        Пригород и область: +70 ₽/км от поста ГАИ</p>
+                                </div>
+                                <div class="charecters">
+                                    <a href="#" class="tab-link" data-tab="char">Характеристики</a>
+                                    <a href="#" class="tab-link" data-tab="price">Условия ценообразования</a>
+                                </div>
+                            </div>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png" alt="">Mitsubishi
+                                Fuso Fighter —
+                                до 30 м</a>
+                        </div>
+                    </div>
+                    <div class="services__bottom">
+                        <h3>
+                            Скидка 5% на первый заказ
+                        </h3>
+                        <p>
+                            Забронируйте автовышку уже сегодня
+                            и получите скидку на первую аренду
+                        </p>
+
+                        <h4>Акция действует для новых
+                            клиентов при заказе от 4-х часов</h4>
+
+                        <button class="btn js-open-stock">
+                            <img loading="lazy" decoding="async" src="img/arrow_up1.png" alt="">
+                            Получить скидку
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="about_block">
+                    <div class="section_title">
+                        Услуги автовышки для высотных работ
+                    </div>
+                    <div class="description_catalog">
+                        Автоподъёмник можно заказать для любых работ на высоте до 28 метров. В отличие от лесов, АГП не
+                        требует сборки, мобильна и позволяет добраться в труднодоступные места.
+                        Ниже — полный перечень услуг и видов работ, для которых подходит наша техника.
+                    </div>
+                    <div class="services_cards_group">
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Строителям и отделочникам
+                            </div>
+                            <ul>
+                                <li>Фасадные и отделочные работы</li>
+                                <li>Штукатурные работы на высоте</li>
+                                <li>Покраска фасадов зданий</li>
+                                <li>Утепление фасадов (монтаж минваты, пенопласта)</li>
+                                <li>Затирка и грунтовка стен</li>
+                                <li>Ремонт и восстановление фасадного покрытия</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card1.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Монтажникам и кровельщикам
+                            </div>
+                            <ul>
+                                <li>Монтажные и кровельные работы</li>
+                                <li>Сварка металлоконструкций на высоте</li>
+                                <li>Установка сэндвич-панелей</li>
+                                <li>Монтаж профнастила и сайдинга</li>
+                                <li>Установка отливов, желобов, водосточных систем</li>
+                                <li>Монтаж кровли и её ремонт</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card2.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Клининговым компаниям
+                            </div>
+                            <ul>
+                                <li>Высотный клининг</li>
+                                <li>Мытьё окон и витражей</li>
+                                <li>Очистка балконов и фасадов</li>
+                                <li>Мойка вывесок и стелл</li>
+                                <li>Очистка кровли от мусора и снега</li>
+                                <li>Удаление граффити и загрязнений с фасадов</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card3.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Арбористам и садовникам
+                            </div>
+                            <ul>
+                                <li>Обрезка и спил деревьев (кронирование)</li>
+                                <li>Спил тополей, берёз, аварийных деревьев</li>
+                                <li>Формовочная и санитарная обрезка веток</li>
+                                <li>Удаление сухостоя и нависающих веток</li>
+                                <li>Обрезка кустарников на высоте</li>
+                                <li>Удаление деревьев в стеснённых условиях (во дворах, у ЛЭП)</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card4.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Владельцам частных домов
+                            </div>
+                            <ul>
+                                <li>Работы на участке и дома</li>
+                                <li>Доступ к крыше для ремонта и обслуживания</li>
+                                <li>Регулировка и ремонт камер видеонаблюдения</li>
+                                <li>Установка и обслуживание антенн</li>
+                                <li>Покраска и ремонт фронтонов, карнизов</li>
+                                <li>Установка новогодней иллюминации</li>
+                                <li>Обслуживание дымоходов и вентиляции</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card5.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Рекламным агенствам
+                            </div>
+                            <ul>
+                                <li>Монтаж и обслуживание рекламы</li>
+                                <li>Установка баннеров и растяжек</li>
+                                <li>Монтаж вывесок и световых коробов</li>
+                                <li>Установка стелл и щитов</li>
+                                <li>Нанесение масштабных изображений на стены домов</li>
+                                <li>Демонтаж старой рекламы</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card6.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Электромонтажникам
+                            </div>
+                            <ul>
+                                <li>Электромонтажные работы на высоте</li>
+                                <li>Замена прожекторов и светильников</li>
+                                <li>Ремонт уличного освещения</li>
+                                <li>Подключение домов к ЛЭП</li>
+                                <li>Замена счётчиков на столбах</li>
+                                <li>Монтаж и обслуживание антенн</li>
+                                <li>Установка камер видеонаблюдения</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card7.png" alt="" class="img_services">
+                            <div class="title_card">
+                                ЖКХ и управляющим компаниям
+                            </div>
+                            <ul>
+                                <li>Обслуживание жилых домов</li>
+                                <li>Очистка кровли от сосулек, снега и наледи</li>
+                                <li>Ремонт водосточных труб</li>
+                                <li>Покраска и ремонт фасадов</li>
+                                <li>Установка и ремонт антенн коллективного доступа</li>
+                                <li>Обслуживание систем видеонаблюдения в ЖК</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card8.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Видеонаблюдение, безопасность
+                            </div>
+                            <ul>
+                                <li>Монтаж камер видеонаблюдения на столбах и фасадах</li>
+                                <li>Очистка камер от паутины и загрязнений</li>
+                                <li>Обслуживание блоков и кронштейнов</li>
+                                <li>Регулировка угла обзора камер</li>
+                                <li>Замена камер, установка дополнительного оборкдования</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card9.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Поздравления и сюрпризы
+                            </div>
+                            <ul>
+                                <li>Поздравление в окно на праздник (8 марта, 14 февраля, день рождения и т.д.)</li>
+                                <li>Предложение руки и сердца в окно</li>
+                                <li>Гендер пати (запуск цветного дыма на высоте)</li>
+                                <li>Украшение фасадов к праздникам</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-service">
+                            <img src="img/bg_services_card10.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Форс-мажорные ситуации
+                            </div>
+                            <ul>
+                                <li>Открытие захлопнувшейся двери на балконе</li>
+                                <li>Спасение кошек или других животных с деревьев и крыш</li>
+                                <li>Доступ к застрявшему квадрокоптеру, дрону</li>
+                                <li>Аварийный доступ в помещение через окно или балкон</li>
+                            </ul>
+                            <a href="#" class="register js-open-service"><img src="img/arrow_up1.png"
+                                    alt="">Забронировать автовышку</a>
+                        </div>
+                        <div class="card_services js-open-consultation">
+                            <img src="img/bg_services_card11.png" alt="" class="img_services">
+                            <div class="title_card">
+                                Не знаете подойдут ли наши автовышки под ваши задачи?
+                            </div>
+                            <p>Проконсультируем бесплатно
+                                и без обязательств!
+                            </p>
+                            <a href="#" class="register js-open-consultation"><img src="img/arrow_up1.png"
+                                    alt="">Получить консультацию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- actions -->
+        <section class="actions" id="actions">
+            <div class="container">
+                <div class="about_block">
+                    <div class="title_block">
+                        <h3>Акции и спецпредложения</h3>
+                        <p>Несколько предложений для вашей экономии</p>
+                    </div>
+                    <div class="cards_actions_group">
+                        <div class="card_action">
+                            <img src="img/bg_actions.png" alt="" class="bg_actions">
+                            <div class="title_text">
+                                <h5>Скидка 5% на аренду любой автовышки при заказе от 4-х часов</h5>
+                                <p><span>-</span>
+                                    Только для новых клиентов</p>
+                                <h6>Бессрочно</h6>
+                            </div>
+                            <a href="#" class="register js-open-skidka"><img src="img/arrow_up1.png" alt="">Узнать
+                                подробности</a>
+                        </div>
+                        <div class="card_action">
+                            <img src="img/bg_actions1.png" alt="" class="bg_actions">
+                            <div class="title_text">
+                                <h5>Скидка 10% на аренду любой автовышки при заказе – от 8-ми часов</h5>
+                                <p><span>-</span>
+                                    Для всех клиентов</p>
+                                <h6>Бессрочно</h6>
+                            </div>
+                            <a href="#" class="register js-open-skidka"><img src="img/arrow_up1.png" alt="">Узнать
+                                подробности</a>
+                        </div>
+                        <div class="card_action">
+                            <img src="img/bg_actions3.png" alt="" class="bg_actions">
+                            <div class="title_text">
+                                <h5>Система скидок для постоянных клиентов (До 15% на все заказы)</h5>
+                                <h6 class="third_card_text">Бессрочно</h6>
+                            </div>
+                            <a href="#" class="register js-open-skidka"><img src="img/arrow_up1.png" alt="">Узнать
+                                подробности</a>
+                        </div>
+                        <div class="card_action">
+                            <img src="img/bg_actions2.png" alt="" class="bg_actions">
+                            <div class="title_text">
+                                <h4>Больше акций и спецпредложений бывают в наших социальных сетях
+                                    <b>Подписывайтесь, чтобы быть в курсе</b>
+                                </h4>
+                                <div class="networks">
+                                    <a href="#"><img src="img/networks5.png" alt=""></a>
+                                    <a href="#"><img src="img/networks4.png" alt=""></a>
+                                    <a href="#"><img src="img/networks6.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- reviews -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__top">
+                    <div class="reviews__infos">
+                        <h2 class="section__title">
+                            Отзывы наших клиентов
+                        </h2>
+                        <p>
+                            Реальные мнения тех, кто уже доверил нам решение своих задач
+                        </p>
+                    </div>
+                    <div class="swiper-pagination reviews__pagination"></div>
+                </div>
+                <div class="reviews__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__item">
+                                <a href="img/review-video-2.webp" class="reviews__item-video reviews__popup"
+                                    data-fancybox="reviews">
+                                    <img loading="lazy" decoding="async" src="img/review-video-2.webp" alt="">
+                                    <div class="button_play">
+                                        <button>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="#333" stroke="#333" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-play" aria-hidden="true">
+                                                <path
+                                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <span>Смотреть видео отзыв</span>
+                                    </div>
+                                </a>
+                                <div class="texts_slide">
+                                    <h4>Покраска фасада здания</h4>
+                                    <p>Челябинск, ул. Российская 3</p>
+                                </div>
+                                <div class="reviews__item-author">
+                                    <img loading="lazy" decoding="async" src="img/review-2.webp" alt="" class="logo">
+                                    <div class="infos">
+                                        <h4>Александр Артемьев</h4>
+                                        <p>Заместитель руководителя службы ЖКХ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__item">
+                                <div class="reviews__item-comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit.
+                                </div>
+                                <div class="texts_slide">
+                                    <h4>Спил навесающих веток</h4>
+                                    <p>Челябинск, ул. Островского 16а</p>
+                                </div>
+                                <div class="reviews__item-author">
+                                    <img loading="lazy" decoding="async" src="img/review-2.webp" alt="" class="logo">
+                                    <div class="infos">
+                                        <h4>Константи Большаков</h4>
+                                        <p>Руководитель компании по аренде</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__item">
+                                <a href="img/review-video-2.webp" class="reviews__item-video reviews__popup"
+                                    data-fancybox="reviews">
+                                    <img loading="lazy" decoding="async" src="img/review-video-2.webp" alt="">
+                                    <div class="button_play">
+                                        <button>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="#333" stroke="#333" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-play" aria-hidden="true">
+                                                <path
+                                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <span>Смотреть видео отзыв</span>
+                                    </div>
+                                </a>
+                                <div class="texts_slide">
+                                    <h4>Спил навесающих веток</h4>
+                                    <p>Челябинск, ул. Островского 16а</p>
+                                </div>
+                                <div class="reviews__item-author">
+                                    <img loading="lazy" decoding="async" src="img/review-2.webp" alt="" class="logo">
+                                    <div class="infos">
+                                        <h4>Константи Большаков</h4>
+                                        <p>Руководитель компании по аренде</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__item">
+                                <div class="reviews__item-comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Perspiciatis a corrupti quae ex voluptas non tenetur blanditiis modi
+                                    consequuntur dolorem dicta exercitationem sunt quidem est cumque, inventore libero
+                                    officia reprehenderit.
+                                </div>
+                                <div class="texts_slide">
+                                    <h4>Монтаж баннера</h4>
+                                    <p>Челябинск, ул. Ленина 65</p>
+                                </div>
+                                <div class="reviews__item-author">
+                                    <img loading="lazy" decoding="async" src="img/review-2.webp" alt="" class="logo">
+                                    <div class="infos">
+                                        <h4>Юлия Пегач</h4>
+                                        <p>Руководитель рекламного агентства</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__item">
+                                <a href="img/review-video-2.webp" class="reviews__item-video reviews__popup"
+                                    data-fancybox="reviews">
+                                    <img loading="lazy" decoding="async" src="img/review-video-2.webp" alt="">
+                                    <div class="button_play">
+                                        <button>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="#333" stroke="#333" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-play" aria-hidden="true">
+                                                <path
+                                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <span>Смотреть видео отзыв</span>
+                                    </div>
+                                </a>
+                                <div class="texts_slide">
+                                    <h4>Покраска фасада здания</h4>
+                                    <p>Челябинск, ул. Российская 3</p>
+                                </div>
+                                <div class="reviews__item-author">
+                                    <img loading="lazy" decoding="async" src="img/review-2.webp" alt="" class="logo">
+                                    <div class="infos">
+                                        <h4>Александр Артемьев</h4>
+                                        <p>Заместитель руководителя службы ЖКХ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__item">
+                                <div class="reviews__item-comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit.
+                                </div>
+                                <div class="texts_slide">
+                                    <h4>Покраска фасада здания</h4>
+                                    <p>Челябинск, ул. Российская 3</p>
+                                </div>
+                                <div class="reviews__item-author">
+                                    <img loading="lazy" decoding="async" src="img/review-2.webp" alt="" class="logo">
+                                    <div class="infos">
+                                        <h4>Иванова Клавдия</h4>
+                                        <p>Омоложение лица, процедура подтяжки кожи</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next reviews__nav--next">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                    <div class="swiper-button-prev reviews__nav--prev">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cleints -->
+        <section class="clients">
+            <div class="container">
+                <div class="clients__top">
+                    <div class="clients__infos">
+                        <h2 class="section__title">
+                            Среди наших клиентов
+                        </h2>
+                        <p>
+                            8000+ заказов: от частных лиц до лидеров региона
+                        </p>
+                    </div>
+                    <div class="swiper-pagination clients__pagination"></div>
+                </div>
+                <div class="clients__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands_clients">
+                                <img src="img/brands.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next clients__nav--next">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                    <div class="swiper-button-prev clients__nav--prev">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- works -->
+        <section class="works" id="works">
+            <div class="container">
+                <div class="works__top">
+                    <div class="works__infos">
+                        <h2 class="section__title">
+                            Техника в работе
+                        </h2>
+                        <p>
+                            1200+ выездов за всё время существования компании. Реальные фото с объектов.
+                        </p>
+                    </div>
+                    <div class="swiper-pagination works__pagination"></div>
+                </div>
+                <div class="works__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="works__item">
+                                <img loading="lazy" decoding="async" src="img/work_img.png" alt="">
+                                <div class="works__item-infos">
+                                    <p>Монтаж баннера на ул. Российской</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next works__nav--next">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                    <div class="swiper-button-prev works__nav--prev">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="services__bottom">
+                    <h3>
+                        Рассчитаем стоимость аренды уже сегодня
+                    </h3>
+                    <p>
+                        Бесплатный расчёт, без обязательств и скрытых условий
+                    </p>
+
+                    <button class="btn js-open-rashet">
+                        <img loading="lazy" decoding="async" src="img/arrow_up1.png" alt="">
+                        Рассчитать стоимость
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps -->
+        <section class="steps" id="steps">
+            <div class="container">
+                <div class="steps__block">
+                    <div class="steps-texts">
+                        <h2 class="section__title">Как мы работаем</h2>
+                        <p>
+                            4 простых шага к выполнению ваших задач на высоте
+                        </p>
+                    </div>
+                    <!-- Desktop version -->
+                    <div class="steps-wrapper steps-wrapper--desktop">
+                        <div class="step-item">
+                            <div class="number">
+                                1
+                            </div>
+                            <h3>Оставьте заявку</h3>
+                            <div class="submit_request">
+                                <h6>Через <a href="#" class="form_site js-open-consultation">форму на сайте,</a></h6>
+                                <h6>по тел <a href="tel:+79222377720">+7 (922) 237-77-20</a></h6>
+                                <h6>или в сообщении</h6>
+                                <div class="networks">
+                                    <a href="#"><img src="img/networks_header.png" alt="Viber"></a>
+                                    <a href="#"><img src="img/networks_header1.png" alt="Viber"></a>
+                                    <a href="#"><img src="img/networks_header2.png" alt="Viber"></a>
+                                    <a href="#"><img src="img/networks_header3.png" alt="Viber"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="number">
+                                2
+                            </div>
+                            <h4>Бесплатная консультация</h4>
+                            <p>
+                                Обговариваем детали: время аренды, время подачи, точную стоимость и объём работ
+                            </p>
+                        </div>
+                        <div class="step-item">
+                            <div class="number">
+                                3
+                            </div>
+                            <h4>Производим работы</h4>
+                            <p>
+                                Подаём автовышку на объект, подписываем договор и выполняем оговоренный объём работ
+                            </p>
+                        </div>
+                        <div class="step-item">
+                            <div class="number">
+                                4
+                            </div>
+                            <h4>Расчёт и приёмка</h4>
+                            <p>
+                                Наличный, безналичный расчёт, перевод на карту. Работаем с НДС и без НДС. Подписание
+                                актов.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mobile version swiper -->
+                    <div class="steps-wrapper-swiper swiper steps-wrapper--mobile">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="step-item">
+                                    <div class="number">
+                                        1
+                                    </div>
+                                    <h3>Оставьте заявку</h3>
+                                    <div class="submit_request">
+                                        <h6>Через <a href="#" class="form_site">форму на сайте,</a></h6>
+                                        <h6>по тел <a href="tel:+79222377720">+7 (922) 237-77-20</a></h6>
+                                        <h6>или в сообщении</h6>
+                                        <div class="networks">
+                                            <a href="#"><img src="img/networks_header.png" alt="Viber"></a>
+                                            <a href="#"><img src="img/networks_header1.png" alt="Viber"></a>
+                                            <a href="#"><img src="img/networks_header2.png" alt="Viber"></a>
+                                            <a href="#"><img src="img/networks_header3.png" alt="Viber"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="step-item">
+                                    <div class="number">
+                                        2
+                                    </div>
+                                    <h4>Бесплатный осмотр и консультация</h4>
+                                    <p>
+                                        Я изучу ваши особенности, беспокоящие проблемы и отвечу на вопросы
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="step-item">
+                                    <div class="number">
+                                        3
+                                    </div>
+                                    <h4>Индивидуальный план </h4>
+                                    <p>
+                                        Составим и согласуем чёткий план процедур, подходящий под ваши задачи
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="step-item">
+                                    <div class="number">
+                                        4
+                                    </div>
+                                    <h4>Путь к результату </h4>
+                                    <p>
+                                        Начинаем работу, отслеживаем изменения и закрепляем эффект
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination steps__pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about__me">
+                        <div class="section__title">
+                            <h2>Обо мне</h2>
+                            <p>Надёжная аренда автовышек в Челябинске с 2014 года</p>
+                        </div>
+                        <div class="about__text">
+                            <p>
+                                Компания «УралВышка» уже более 12 лет занимается арендой техники для высотных работ в
+                                Челябинске и Челябинской области. У нас собственный парк машин, квалифицированный и
+                                сертифицированный персонал.
+                            </p>
+
+                            <p>
+                                Наши машинисты имеют большой опыт и являются профессионалами своего дела. Это
+                                подтверждается многолетним стажем, благодарными отзывами клиентов и необходимой
+                                сертификацией.
+                            </p>
+                            <p>
+                                Вся техника регулярно проходит плановые осмотры и ТО, всегда находится в исправном,
+                                чистом состоянии. Благодаря этим факторам мы гарантируем высокое качество услуг.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__team">
+                        <div class="team-member">
+                            <img loading="lazy" decoding="async" src="img/member.png" alt="">
+
+                            <div class="team-member-info">
+                                <h4>Ковыляков Евгений Викторович</h4>
+                                <p>
+                                    Руководитель компании "УралВышка"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- indicators -->
+        <section class="indicators">
+            <div class="container">
+                <h2 class="title_indicators">Цифры компании </h2>
+                <div class="numbers_indicator">
+                    <div class="number">
+                        <h4><span>12+</span> лет</h4>
+                        <p>возраст компании</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>5+</span> лет</h4>
+                        <p>средний опыт работы машинистов</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>20</span> минут</h4>
+                        <p>минимальное время от заказа до подачи</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>0</span> простоев</h4>
+                        <p>минимальное время от заказа до подачи</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>50+</span> выездов</h4>
+                        <p>в среднем ежемесячно</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>8000+</span> заказов</h4>
+                        <p>за всё время работы компании</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>6</span> машин</h4>
+                        <p>собственный автопарк</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>25+</span> компаний</h4>
+                        <p>наши постоянные клиенты</p>
+                    </div>
+                    <div class="number">
+                        <h4><span>85+%</span> клиентов</h4>
+                        <p>обращаются повторно</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- advantages -->
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <h2 class="section__title">Почему нас выбрали уже более 1500 клиентов</h2>
+                <div class="advantages__wrapper">
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages.png" alt="">
+                        <p>
+                            <span>100% гарантия выполнения заказа</span> <br>
+                            — всегда предусматриваем запасной вариант на случай форс-мажора
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages1.png" alt="">
+                        <p>
+                            <span>Безопастность в приоритете</span> <br>
+                            — два поста управления, допуск к работе с ЛЭП, диэлектрическая люлька
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages2.png" alt="">
+                        <p>
+                            <span>Регистрация в Ростехнадзоре</span> <br>
+                            — вся техника, водители и экипаж имеют официальную сертификацию
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages3.png" alt="">
+                        <p>
+                            <span>Честное рыночное ценообразование</span> <br>
+                            — без переплат и «пустых» накруток.
+                            Бесплатная подача по городу
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages4.png" alt="">
+                        <p>
+                            <span>Исключительный профессионализм</span> <br>
+                            — 12+ лет опыта, 8 000+ заказов. Договор и бухгалтерские документы
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages5.png" alt="">
+                        <p>
+                            <span>Готовы к работе в любой момент</span> <br>
+                            — круглосуточно, без перерывов, выходных и праздников
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages6.png" alt="">
+                        <p>
+                            <span>Индивидуальный подход для каждого</span> <br>
+                            — выезд в удобное для вас время.
+                            Работаем как с юр., так и физ. лицами
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages7.png" alt="">
+                        <p>
+                            <span>Система скидок для вашей экономии</span> <br>
+                            — для постоянных клиентов и при долгосрочной аренде (до 20%)
+                        </p>
+                    </div>
+                    <div class="advantages-item">
+                        <img loading="lazy" decoding="async" src="img/advantages8.png" alt="">
+                        <p>
+                            <span>Различные способы оплаты</span> <br>
+                            — наличный, безналичный, перевод по счёту перевод, с НДС или без НДС
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- documents -->
+        <section class="documents">
+            <div class="container">
+                <div class="documents__top">
+                    <h2 class="section__title">Мои дипломы и сертификаты</h2>
+                    <div class="swiper-pagination documents__pagination"></div>
+                </div>
+                <div class="documents__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="documents-item">
+                                <a href="img/doc.png" class="documents__popup" data-fancybox="documents"
+                                    title="Сертификат официального дилера «Байтек Интернейшнл">
+                                    <img loading="lazy" decoding="async" src="img/doc.png" alt="">
+                                    <div class="icon">
+                                        <img loading="lazy" decoding="async" src="img/size_icon.png" alt="">
+                                    </div>
+                                    <span>
+                                        Сертификат официального дилера «Байтек Интернейшнл
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next documents__nav--next">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                    <div class="swiper-button-prev documents__nav--prev">
+                        <img loading="lazy" decoding="async" src="img/next_arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="services__bottom">
+                    <h3>
+                        Скидка 5% на первый заказ
+                    </h3>
+                    <p>
+                        Забронируйте автовышку уже сегодня
+                        и получите скидку на первую аренду
+                    </p>
+
+                    <h4>Акция действует для новых
+                        клиентов при заказе от 4-х часов</h4>
+
+                    <button class="btn js-open-stock">
+                        <img loading="lazy" decoding="async" src="img/arrow_up1.png" alt="">
+                        Получить скидку
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section__title">Вопрос-ответ</h2>
+                <div class="faq__items">
+                    <div class="faq__item ">
+                        <div class="faq__item-title">
+                            <h3>Нужна ли спецтехника для доставки автовышки?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                На первой консультации я внимательно изучаю ваши особенности и цели, чтобы подобрать
+                                процедуры, которые подходят именно вам. Обсудим ваши ожидания, осмотрим кожу и составим
+                                индивидуальный план процедур.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-title">
+                            <h3>Могу ли я управлять автовышкой сам или нужен оператор?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                Я работаю только с сертифицированными препаратами и оборудованием от ведущих
+                                производителей. Все процедуры проводятся с соблюдением медицинских стандартов
+                                безопасности. Перед каждой процедурой проводится консультация.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-title">
+                            <h3>Какие документы вы предоставляете для бухгалтерии?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                Эффект заметен уже после первой процедуры — это может быть улучшение тонуса, увлажнение
+                                или лёгкая коррекция. Для выраженного и стойкого результата рекомендуется курс, который
+                                мы подбираем на консультации.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-title">
+                            <h3>Что входит в стоимость аренды автовышки?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                На первой консультации я внимательно изучаю ваши особенности и цели, чтобы подобрать
+                                процедуры, которые подходят именно вам.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-title">
+                            <h3>Есть ли у вас скидки при долгосрочной аренде?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                Я работаю только с сертифицированными препаратами и оборудованием от ведущих
+                                производителей.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-title">
+                            <h3>Что будет, если техника сломается на объекте?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                Я работаю только с сертифицированными препаратами и оборудованием от ведущих
+                                производителей.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-title">
+                            <h3>Почему нельзя управлять автовышкой самостоятельно?</h3>
+                            <img loading="lazy" decoding="async" src="img/faq_arrow.png" alt="">
+                        </div>
+                        <div class="faq__item-body">
+                            <p>
+                                Я работаю только с сертифицированными препаратами и оборудованием от ведущих
+                                производителей.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq_if_have_questions">
+                        <h3>Остались ещё вопросы? Запишитесь на консультацию прямо сейчас!</h3>
+                        <button class="btn js-open-consultation">
+                            <img loading="lazy" decoding="async" src="img/arrow_up1.png" alt="">
+                            Получить бесплатную консультацю
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- informations -->
+        <section class="information" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="information__side">
+                        <h2 class="section__title">
+                            Новости и жизнь компании в нашей группе Вконтакте
+                        </h2>
+                        <p>
+                            Подписываайтесь и в других социальных сетях:
+                        </p>
+                        <div class="socials">
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks.png" alt=""></a>
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks1.png" alt=""></a>
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks2.png" alt=""></a>
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks3.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="information__right">
+                        <iframe title="Сообщество ВКонтакте"
+                            src="https://vk.com/widget_community.php?app=0&amp;width=876&amp;_ver=1&amp;gid=81990917&amp;mode=4&amp;color1=FFFFFF&amp;color2=000000&amp;color3=00b2ff&amp;height=610"
+                            width="100%" height="610" class="_vkIframe_1wair_104" style="border: none; display: block;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer__map">
+                <div class="container">
+                    <div class="footer__infos">
+                        <h3>КОМПАНИЯ УРАЛВЫШКА</h3>
+                        <div class="footer__job">
+                            Аренда автовышек 24/7 в Челябинске и области
+                        </div>
+                        <div class="footer__contacts">
+                            <div class="contact-item">
+                                <img loading="lazy" decoding="async" src="img/phone_icon.png" alt="">
+                                <a class="tel" href="tel:+79222377720 ">+7 922 23 77 720</a>
+                            </div>
+                            <div class="contact-item">
+                                <img loading="lazy" decoding="async" src="img/email.png" alt="">
+                                <div class="socials">
+                                    <a href="#"><img loading="lazy" decoding="async" src="img/networks_header.png"
+                                            alt=""></a>
+                                    <a href="#"><img loading="lazy" decoding="async" src="img/networks_header1.png"
+                                            alt=""></a>
+                                    <a href="#"><img loading="lazy" decoding="async" src="img/networks_header2.png"
+                                            alt=""></a>
+                                    <a href="#"><img loading="lazy" decoding="async" src="img/networks_header3.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <img loading="lazy" decoding="async" src="img/time.png" alt="">
+                                <div class="time">
+                                    <span>Время работы: </span>
+                                    <p>
+                                        <strong>Круглосуточно,</strong> без выходных и праздников
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <img loading="lazy" decoding="async" src="img/location.png" alt="">
+                                <div class="location">
+                                    <strong>Челябинск, 40 лет Победы, д. 52</strong>
+                                    <a href="#">Построить маршрут в яндекс навигаторе</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__data">
+                            <div class="data-item">
+                                <p>ИП Кобыляков Евгений Викторович</p>
+                                <div class="inn">
+                                    ИНН 743900217743 <br>
+                                    ОГРНИП 323745600027092
+                                </div>
+                            </div>
+                            <div class="download_data">
+                                <div class="down">
+                                    <p><span>Контакты</span> <a href="#"><img src="img/download.png" alt="">JPG PDF</a>
+                                        <a href="#"><img src="img/seal.png" alt="">Печать</a>
+                                    </p>
+                                    <p><span>Реквизиты</span> <a href="#"><img src="img/download.png" alt="">JPG PDF</a>
+                                        <a href="#"><img src="img/seal.png" alt="">Печать</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <span class="info">
+                                    Информация представлена на сайте <br>
+                                    в ознакомительном порядке. <br>
+                                    Не является публичной офертой
+                                </span>
+                            </div>
+                        </div>
+                        <div class="footer__security">
+                            <a href="#" class="js-open-privacy">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <iframe
+                    src="https://yandex.com/map-widget/v1/?um=constructor%3Ac63798910312264435d66805d18ee0f8de5c5e89e42e4ed2564547451e52e778&amp;source=constructor"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="container">
+
+                <div class="row footer__top">
+                    <div class="footer__socials">
+                        <span>Присоединяйтесь ко мне
+                            в социальных сетях:</span>
+                        <div class="socials">
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks.png" alt=""></a>
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks1.png" alt=""></a>
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks2.png" alt=""></a>
+                            <a href="#"><img loading="lazy" decoding="async" src="img/networks3.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer__developer">
+                        <span>Разработка и продвижени сайта: </span>
+                        <a href="#">Билалов Ильяс</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="consultation-modal modal_main" id="consultation-modal" aria-hidden="true">
+            <div class="consultation-modal__overlay" data-modal-close></div>
+            <div class="consultation-modal__dialog" role="dialog" aria-modal="true"
+                aria-labelledby="consultation-modal-title">
+                <button class="consultation-modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="consultation-modal__title" id="consultation-modal-title">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h3>
+                <p class="consultation-modal__subtitle">Заполните форму и я свяжусь с вами в ближайшее время</p>
+                <form class="consultation-modal__form">
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Как вас зовут?</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="tel" placeholder=" ">
+                        <span class="consultation-modal__label">Номер телефона *</span>
+                    </label>
+                    <div class="consultation-modal__options">
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method" checked>
+                            <span></span>
+                            Позвонить по телефону
+                        </label>
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method">
+                            <span></span>
+                            Написать в Telegram
+                        </label>
+                    </div>
+                    <button class="consultation-modal__submit js-open-thanks" type="submit"><img src="img/arrow_up1.png"
+                            alt="">Записаться на консультацию</button>
+                </form>
+                <p class="consultation-modal__note">
+                    Нажимая кнопку, вы даете согласие на
+                    <a href="#" class="js-open-privacy">обработку персональных данных</a>
+                </p>
+            </div>
+        </div>
+        <div class="map-modal modal_main" id="map-modal" aria-hidden="true">
+            <div class="map-modal__overlay" data-map-close></div>
+            <div class="map-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="map-modal-title">
+                <button class="map-modal__close" type="button" aria-label="Закрыть" data-map-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <div class="map-modal__frame">
+                    <iframe title="Карта — Яндекс"
+                        src="https://yandex.com/map-widget/v1/?um=constructor%3Ac63798910312264435d66805d18ee0f8de5c5e89e42e4ed2564547451e52e778&amp;source=constructor"
+                        frameborder="0">
+                    </iframe>
+                </div>
+                <a class="map-modal__route" href="https://yandex.uz/maps/-/CTUB7A-9" target="_blank"
+                    rel="noopener noreferrer">
+                    Построить маршрут в яндекс навигаторе
+                </a>
+            </div>
+        </div>
+        <div class="privacy-modal modal_main" id="privacy-modal" aria-hidden="true">
+            <div class="privacy-modal__overlay" data-privacy-close>>
+            </div>
+            <div class="privacy-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+                <button class="privacy-modal__close" type="button" aria-label="Закрыть" data-privacy-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="privacy-modal__title" id="privacy-modal-title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h3>
+                <div class="privacy-modal__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad necessitatibus cumque
+                        nesciunt aspernatur officiis provident. Nam facilis atque qui, ab odio eveniet, rerum at
+                        repellendus quisquam, porro aliquid vitae repellat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="thanks_modal modal_main" id="thanks-modal" aria-hidden="true">
+            <div class="consultation-modal__overlay" data-modal-close></div>
+            <div class="consultation-modal__dialog" role="dialog" aria-modal="true"
+                aria-labelledby="consultation-modal-title">
+                <button class="consultation-modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="thanks-modal__title" id="consultation-modal-title">Спасибо! Ваша заявка принята!</h3>
+                <p class="thanks-modal__subtitle">Мы свяжемся с вами в ближайшее в</p>
+                <div class="networks_connect">
+                    <h4>Кстати, в наших в социальных сетях много интересного контента :)</h4>
+                    <div class="networks_group">
+                        <a href="#"><img src="img/networks.png" alt=""></a>
+                        <a href="#"><img src="img/networks1.png" alt=""></a>
+                        <a href="#"><img src="img/networks2.png" alt=""></a>
+                        <a href="#"><img src="img/networks3.png" alt=""></a>
+                    </div>
+                </div>
+                <button class="close_modal_tag" aria-label="Закрыть" data-modal-close>Закрыть окно</button>
+            </div>
+        </div>
+        <div class="skidka-modal modal_main" id="skidka-modal" aria-hidden="true">
+            <div class="consultation-modal__overlay" data-modal-close></div>
+            <div class="consultation-modal__dialog" role="dialog" aria-modal="true"
+                aria-labelledby="consultation-modal-title">
+                <button class="consultation-modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="consultation-modal__title" id="consultation-modal-title">КОНСУЛЬТАЦИЯ ПО АКЦИИ</h3>
+                <p class="consultation-modal__subtitle">Заполните форму и я свяжусь с вами в ближайшее время</p>
+                <form class="consultation-modal__form">
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Как вас зовут?</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="tel" placeholder=" ">
+                        <span class="consultation-modal__label">Номер телефона *</span>
+                    </label>
+                    <div class="consultation-modal__options">
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method" checked>
+                            <span></span>
+                            Позвонить по телефону
+                        </label>
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method">
+                            <span></span>
+                            Написать в МАКС
+                        </label>
+                    </div>
+                    <button class="consultation-modal__submit js-open-thanks" type="button"><img src="img/arrow_up1.png"
+                            alt="">Узнать подробности акции</button>
+                </form>
+                <p class="consultation-modal__note">
+                    Нажимая кнопку, вы даете согласие на
+                    <a href="#" class="js-open-privacy">обработку персональных данных</a>
+                </p>
+            </div>
+        </div>
+        <div class="stock-modal modal_main" id="stock-modal" aria-hidden="true">
+            <div class="consultation-modal__overlay" data-modal-close></div>
+            <div class="consultation-modal__dialog" role="dialog" aria-modal="true"
+                aria-labelledby="consultation-modal-title">
+                <button class="consultation-modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="consultation-modal__title" id="consultation-modal-title">СКИДКА НА ПЕРВЫЙ ЗАКАЗ</h3>
+                <p class="consultation-modal__subtitle">Заполните форму и я свяжусь с вами в ближайшее время</p>
+                <form class="consultation-modal__form">
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Как вас зовут?</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="tel" placeholder=" ">
+                        <span class="consultation-modal__label">Номер телефона *</span>
+                    </label>
+                    <div class="consultation-modal__options">
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method" checked>
+                            <span></span>
+                            Позвонить по телефону
+                        </label>
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method">
+                            <span></span>
+                            Написать в МАКС
+                        </label>
+                    </div>
+                    <button class="consultation-modal__submit js-open-thanks" type="button"><img src="img/arrow_up1.png"
+                            alt="">Получить скидку на первый заказ</button>
+                </form>
+                <p class="consultation-modal__note">
+                    Нажимая кнопку, вы даете согласие на
+                    <a href="#" class="js-open-privacy">обработку персональных данных</a>
+                </p>
+            </div>
+        </div>
+        <div class="service-modal modal_main" id="service-modal" aria-hidden="true">
+            <div class="consultation-modal__overlay" data-modal-close></div>
+            <div class="consultation-modal__dialog" role="dialog" aria-modal="true"
+                aria-labelledby="consultation-modal-title">
+                <button class="consultation-modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="consultation-modal__title" id="consultation-modal-title">БРОНИРОВАНИЕ АВТОВЫШКИ </h3>
+                <p class="consultation-modal__subtitle">Заполните форму и я свяжусь с вами в ближайшее время</p>
+                <form class="consultation-modal__form">
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Как вас зовут?</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="tel" placeholder=" ">
+                        <span class="consultation-modal__label">Номер телефона *</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Нужная дата, время и краткое описание работ</span>
+                    </label>
+                    <div class="consultation-modal__options">
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method" checked>
+                            <span></span>
+                            Позвонить по телефону
+                        </label>
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method">
+                            <span></span>
+                            Написать в МАКС
+                        </label>
+                    </div>
+                    <button class="consultation-modal__submit js-open-thanks" type="button"><img src="img/arrow_up1.png"
+                            alt="">Забронировать автовышку</button>
+                </form>
+                <p class="consultation-modal__note">
+                    Нажимая кнопку, вы даете согласие на
+                    <a href="#" class="js-open-privacy">обработку персональных данных</a>
+                </p>
+            </div>
+        </div>
+        <div class="rashet-modal modal_main" id="rashet-modal" aria-hidden="true">
+            <div class="consultation-modal__overlay" data-modal-close></div>
+            <div class="consultation-modal__dialog" role="dialog" aria-modal="true"
+                aria-labelledby="consultation-modal-title">
+                <button class="consultation-modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                    <img loading="lazy" decoding="async" src="img/close_modal.png" alt="">
+                </button>
+                <h3 class="consultation-modal__title" id="consultation-modal-title">РАССЧИТАТЬ СТОИМОСТЬ АРЕНДЫ</h3>
+                <p class="consultation-modal__subtitle">Заполните форму и я свяжусь с вами в ближайшее время</p>
+                <form class="consultation-modal__form">
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Как вас зовут?</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="tel" placeholder=" ">
+                        <span class="consultation-modal__label">Номер телефона *</span>
+                    </label>
+                    <label class="consultation-modal__field">
+                        <input class="consultation-modal__input" type="text" placeholder=" ">
+                        <span class="consultation-modal__label">Нужная дата, время и краткое описание работ</span>
+                    </label>
+                    <div class="consultation-modal__options">
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method" checked>
+                            <span></span>
+                            Позвонить по телефону
+                        </label>
+                        <label class="consultation-modal__option">
+                            <input type="radio" name="contact-method">
+                            <span></span>
+                            Написать в МАКС
+                        </label>
+                    </div>
+                    <button class="consultation-modal__submit js-open-thanks" type="button"><img src="img/arrow_up1.png"
+                            alt="">Получить расчёт стоимости</button>
+                </form>
+                <p class="consultation-modal__note">
+                    Нажимая кнопку, вы даете согласие на
+                    <a href="#" class="js-open-privacy">обработку персональных данных</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        Fancybox.bind("[data-fancybox='gallery']", {
+            Toolbar: true,
+            Thumbs: false,
+            closeButton: true,
+            arrows: true
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
